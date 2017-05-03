@@ -1,0 +1,96 @@
+body {
+  background: url('./img/main-bg.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: white;
+}
+
+a, a:visited, a:hover, a:link {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  margin-top: 200px;
+}
+
+section h1 {
+  font-size: 4em;
+}
+
+section h3 {
+  padding-top: 0;
+  margin-top: -.5em;
+  font-size: 2em;
+}
+
+section p {
+  margin-top: 200px;
+}
+
+section p i.fa {
+  font-size: 2em;
+  color: gray;
+  background-color: white;
+  border-radius: 50%;
+  padding: .5em;
+}
+
+span.contact {
+  display: none;
+  position: absolute;
+  min-width: 50px;
+  right: 15%;
+}
+
+span.contact i {
+  margin-left: 1em;
+}
+
+#hamburger {
+  display: none;
+}
+header {
+  margin-top: 20px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flexitem {
+  flex: 1;
+  min-width: 200px;
+  margin-left: 20px;
+  padding: 5px;
+}
+
+@media (max-width:720px) {
+  span.contact {
+    padding-top: 1.5em;
+    display: inline;
+  }
+
+  #hamburger {
+    position: absolute;
+    top: 1em;
+    left: 2em;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: inline;
+    border: 1px solid white;
+    padding: .5em;
+  }
+
+  nav {
+    display: none;
+  }
+}
